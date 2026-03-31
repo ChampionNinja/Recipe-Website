@@ -364,3 +364,51 @@ li {
         margin-left: 0;
     }
 }
+
+.recipes {
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+
+    .scroll-btn {
+        display: none;
+    }
+
+    .card {
+        min-width: 220px;
+    }
+
+    .intro {
+        padding: 20px 14px;
+    }
+
+    .recipe img {
+        max-width: 100%;
+    }
+
+    .info-box {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .info-box span {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+}
